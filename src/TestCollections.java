@@ -1,5 +1,7 @@
 public class TestCollections {
     public static void main(String[] args) {
+
+        // Testing MyArrayList
         MyArrayList<Integer> arrayList = new MyArrayList<>(8);
         System.out.println("arrayList.size() = " + arrayList.size());
         System.out.println("arrayList = " + arrayList);
@@ -33,6 +35,27 @@ public class TestCollections {
         arrayList.clear();
         System.out.println("arrayList.size() = " + arrayList.size());
         System.out.println("arrayList = " + arrayList);
+        System.out.println("\n-------------------------MyLinkedList----------------------------------\n");
+
+        // Testing MyLinkedList
+        MyLinkedList<String> linkedList = new MyLinkedList<>();
+        System.out.println("linkedList.size() = " + linkedList.size());
+        System.out.println("linkedList = " + linkedList);
+        linkedList.add("firstElement");
+        linkedList.add("secondElement");
+        linkedList.add("thirdElement");
+        linkedList.add("fourthElement");
+        System.out.println("linkedList.size() = " + linkedList.size());
+        System.out.println("linkedList = " + linkedList);
+        System.out.println("linkedList.get(1) = " + linkedList.get(1));
+        System.out.println("linkedList.get(3) = " + linkedList.get(3));
+        System.out.println("linkedList.remove(3) = " + linkedList.remove(3));
+        System.out.println("linkedList.size() = " + linkedList.size());
+        System.out.println("linkedList = " + linkedList);
+        linkedList.clear();
+        System.out.println("linkedList.size() = " + linkedList.size());
+        System.out.println("linkedList = " + linkedList);
+
 
     }
 }
