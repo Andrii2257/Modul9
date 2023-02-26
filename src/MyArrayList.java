@@ -50,9 +50,7 @@ public class MyArrayList<T> {
     public T remove(int ind) {
         if (ind < 0 || ind > index) return null;
         T result = (T) arrayData[ind];
-        for (int i = 5; i < index; i++) {
-            arrayData[i] = arrayData[i + 1];
-        }
+        System.arraycopy(arrayData, ind + 1, arrayData, ind, index - ind);
         index--;
         return result;
     }
