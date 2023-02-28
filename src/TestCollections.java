@@ -56,6 +56,26 @@ public class TestCollections {
         System.out.println("linkedList.size() = " + linkedList.size());
         System.out.println("linkedList = " + linkedList);
 
+        MyHashMap<String,Integer> myHashMap = new MyHashMap<String,Integer>();
+        System.out.println("myHashMap.size() = " + myHashMap.size());
+        System.out.println("myHashMap.put() = " + myHashMap.put("login", 10));
+        System.out.println("myHashMap.size() = " + myHashMap.size());
+        System.out.println("myHashMap.put(\"password\", 12) = " + myHashMap.put("password", 12));
+        System.out.println("myHashMap.put(\"login\", 20) = " + myHashMap.put("login", 20));
+        System.out.println("myHashMap.size() = " + myHashMap.size());
+
+        System.out.println("myHashMap.get(\"login\") = " + myHashMap.get("login"));
+        System.out.println("myHashMap.size() = " + myHashMap.size());
+        System.out.println("myHashMap.remove(\"abcd\") = " + myHashMap.remove("abcd"));
+        System.out.println("myHashMap.size() = " + myHashMap.size());
+        System.out.println("myHashMap.remove(\"password\") = " + myHashMap.remove("password"));
+        System.out.println("myHashMap.size() = " + myHashMap.size());
+        System.out.println("myHashMap.get(\"password\") = " + myHashMap.get("password"));
+        System.out.println("myHashMap.get(\"login\") = " + myHashMap.get("login"));
+
+        myHashMap.clear();
+        System.out.println("myHashMap.size() = " + myHashMap.size());
+
 
     }
 }
