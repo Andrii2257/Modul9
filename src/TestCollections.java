@@ -76,6 +76,73 @@ public class TestCollections {
         myHashMap.clear();
         System.out.println("myHashMap.size() = " + myHashMap.size());
 
+        System.out.println("\n-------------------------MyQueue----------------------------------\n");
 
+        MyQueue<Number> queue = new MyQueue<>(8);
+
+        System.out.println("queue.size = " + queue.size());
+        System.out.println("queue = " + queue);
+
+        queue.add(-6.3);
+        queue.add(3);
+        queue.add(0.5);
+        queue.add(24);
+        queue.add(9.8f);
+        queue.add(4);
+        System.out.println("queue = " + queue);
+        System.out.println("queue.size = " + queue.size());
+        System.out.println("queue.peek() = " + queue.peek());
+        System.out.println("queue.peek() = " + queue.peek());
+        System.out.println("queue.size = " + queue.size());
+        System.out.println("queue.poll() = " + queue.poll());
+        System.out.println("queue.poll() = " + queue.poll());
+        System.out.println("queue.size = " + queue.size());
+        System.out.println("queue = " + queue);
+        System.out.println("queue.add(41) = " + queue.add(41));
+        System.out.println("queue.add(42) = " + queue.add(42));
+        System.out.println("queue.add(43) = " + queue.add(43));
+        System.out.println("queue.add(44) = " + queue.add(44));
+        System.out.println("queue.add(45) = " + queue.add(45));
+        System.out.println("queue = " + queue);
+        System.out.println("queue.size() = " + queue.size());
+        queue.clear();
+        System.out.println("queue.size() = " + queue.size());
+        System.out.println("queue.add(0.5) = " + queue.add(0.5));
+        System.out.println("queue.add(24) = " + queue.add(24));
+        System.out.println("queue.poll() = " + queue.poll());
+        System.out.println("queue.poll() = " + queue.poll());
+        System.out.println("queue.poll() = " + queue.poll());
+        System.out.println("queue.poll() = " + queue.poll());
+        System.out.println("queue.size() = " + queue.size());
+
+        System.out.println("\n-------------------------MyStack----------------------------------\n");
+
+        MyStack<Number> stack = new MyStack<>(8);
+        System.out.println("stack.size() = " + stack.size());
+        System.out.println("stack = " + stack);
+        System.out.println("stack.push(32) = " + stack.push(32));
+        System.out.println("stack = " + stack);
+        System.out.println("stack.push(3.56f) = " + stack.push(3.56f));
+        for (float i = 23.15f; i < 35.0 ; i += 1.25) {
+            System.out.println("stack.push(" + i + ") = " + stack.push(i));
+        }
+        System.out.println("stack.size() = " + stack.size());
+        System.out.println("stack = " + stack);
+        System.out.println("stack.remove(4) = " + stack.remove(4));
+        System.out.println("stack = " + stack);
+        System.out.println("stack.size() = " + stack.size());
+        int count = stack.size() + 2;
+        for (int j = 0; j < count; j++) {
+            System.out.println("stack.pop() = " + stack.pop());
+        }
+        System.out.println("stack.size() = " + stack.size());
+        System.out.println("stack = " + stack);
+
+        System.out.println("stack.push(10) = " + stack.push(10));
+        System.out.println("stack.push(20) = " + stack.push(20));
+        System.out.println("stack = " + stack);
+        stack.clear();
+        System.out.println("stack.size() = " + stack.size());
+        System.out.println("stack = " + stack);
     }
 }
